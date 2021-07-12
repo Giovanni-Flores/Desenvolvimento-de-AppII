@@ -1,0 +1,304 @@
+import 'dart:math';
+
+void main() {
+  
+  //Prática de Funções
+  //Exercício 1
+  print("Exercício 1");
+  
+  int notaA = 4;
+  int notaB = 2;
+  int notaC = 2;  
+  String opcao = "a";
+  
+  dynamic imprimirMedias(notaA, notaB, notaC, opcao) {
+    
+    if(opcao == "a"){
+      print("\nN1: $notaA" +
+            "\nN2: $notaB" +
+            "\nN3: $notaC\n" +
+            "\nMédia Aritmética: ");
+      return (notaA + notaB + notaC) / 3;
+    } else if(opcao == "b") {
+      print("\nN1: $notaA" +
+            "\nN2: $notaB" +
+            "\nN3: $notaC\n" +
+            "\nMédia Ponderada: ");
+      return ((notaA * 5) + (notaB * 3) + (notaC * 2)) / (5+3+2);  
+  } else if(opcao == "c") {
+      print("\nN1: $notaA" +
+            "\nN2: $notaB" +
+            "\nN3: $notaC\n" +
+            "\nMédia Harmônica: ");
+      return (4 * 4) / ((1+2+4) * 1);
+  } else {
+      return 0;
+    }
+}
+  print(imprimirMedias(notaA, notaB, notaC, opcao));
+  
+  
+  //*************************************
+  //Exercício 2
+  print("\n-----------------------" +
+   "\nExercício 2");
+  
+  dynamic mostrarMenor(){
+    
+  int num1 = 9;
+  int num2 = 10;
+    
+   if(num1 < num2) {
+     print("\nNúmero 1: $num1" + 
+          "\nNúmero 2: $num2" +
+          "\nNúmero $num1 é MENOR que $num2");
+   } else if(num1 == num2) {
+     print("\nNúmero 1: $num1" + 
+          "\nNúmero 2: $num2" +
+          "\nNúmero $num1 é IGUAL à $num2");
+   } else {
+     print("\nNúmero 1: $num1" + 
+          "\nNúmero 2: $num2" +
+          "\nNúmero $num1 é MAIOR que $num2");
+   }
+  }
+  print(mostrarMenor());
+  
+  //*************************************
+  //Exercício 3
+  print("\n-----------------------" +
+   "\nExercício 3");
+  
+  int valor = 10;
+  int pegarValor(valor) {
+    return valor % 2;
+  }
+  
+  bool mostrarPrimo() {
+    if(pegarValor(valor) >= 0) {
+      print("\nNúmero: $valor não é primo = ");
+      return true;
+    } else {
+     print("\nNúmero: $valor é primo = "); 
+     return false;
+   }
+  }
+  print(mostrarPrimo());
+  
+  //*************************************
+  //Exercício 4
+  print("\n-----------------------" +
+   "\nExercício 4");
+  
+  bool retornarBool() {
+    int num = -2;
+    
+    if(num >= 0) {
+      print("\n$num é POSITIVO = ");
+      return true;
+    } else {
+      print("\n$num é NEGATIVO = ");
+      return false;
+    }
+  }
+  print(retornarBool());
+  
+  //*************************************
+  //Exercício 5
+  print("\n-----------------------" +
+   "\nExercício 5");
+  
+    int n1 = Random().nextInt(100);
+    int n2 = Random().nextInt(100);
+    double resultado = (n1 + n2) / 2; 
+  
+   print("\nN°1: $n1" + 
+         "\nN°2: $n2" +
+         "\nMédia Aritmética: $resultado");
+  
+  //*************************************
+  //Exercício 6
+  print("\n-----------------------" +
+   "\nExercício 6");
+  
+  int valor1 = 10;
+  int valor2 = 25;
+  
+  int somarValores($valor1, $valor2) {
+    return valor1 + valor2;
+  }
+  
+  print("\nN°1: $valor1" + 
+        "\nN°2: $valor2" +
+        "\nResultado: ");
+  print(somarValores(valor1, valor2));
+  
+  //*************************************
+  //Exercício 7
+  print("\n-----------------------" +
+   "\nExercício 7");
+  
+  int nota = Random().nextInt(10);
+  
+  double classificarMedia(nota){
+    String conceito;
+      if(nota >= 0 && nota < 5) {
+        conceito = "D";
+        print("\nConceito: $conceito");
+      } else if(nota >= 5 && nota < 7) {
+        conceito = "C";
+        print("\nConceito: $conceito");        
+      } else if(nota >= 7 && nota < 9) {
+        conceito = "B";
+        print("\nConceito: $conceito");
+      } else {
+        conceito = "A";  
+        print("\nConceito: $conceito");
+      }
+    print("Nota: ");
+    return nota;
+  }
+  
+  print(classificarMedia(nota));
+  
+   //*************************************
+  //Exercício 8
+  print("\n-----------------------" +
+   "\nExercício 8");
+  
+  int idade = Random().nextInt(25);
+  String categoria;
+  
+  dynamic classificarPessoa(idade) {
+      if(idade >= 5 && idade <= 7) {
+        categoria = "Infantil A";
+      } else if(idade >=8 && idade <= 10) {
+        categoria = "Infantil B";
+      } else if(idade >=11 && idade <= 13) {
+        categoria = "Juvenil A"; 
+      } else if(idade >=14 && idade < 18) {
+        categoria = "Juvenil B";
+      } else {
+        categoria = "Adultos";
+      }
+    print("\n------------"
+          "\nCategoria**"
+          "\n------------\n" +
+          categoria + 
+          "\n------------"
+          "\nIdade**"
+          "\n------------");
+    return idade;
+  }
+  print(classificarPessoa(idade));
+  
+  //*************************************
+  //Exercício 9
+  print("\n-----------------------" +
+   "\nExercício 9");
+  
+  int verificarNum() {
+    int num1 = 75;
+    int resultado = num1 % 2;
+    
+    if(resultado == 0) {
+      print("\n$num1 - é par");
+      return 1;  
+    } else {
+      print("\n$num1 - é ímpar");
+      return 0;  
+    }
+  }
+  print(verificarNum());
+  
+  //*************************************
+  //Exercício 10
+  print("\n-----------------------" +
+   "\nExercício 10\n");
+  
+  int number1 = 10;
+  int number2 = 20;
+  
+  int calcularModulo() {
+    if(number1 >= 0) {
+      return number1;
+    } else {
+      return number1 * -(1);
+    }
+  }
+  
+  int informarValores() {
+    int a = number1 + number2;
+    int b = number1 * (number2 * number2);
+    int c = number1 * number1;
+    int d = 3 * (2 * a);
+    double e = d / 2; 
+    
+    print("A - $a" + 
+          "\nB - $b" +
+          "\nC - $c" +
+          "\nD - $d" +
+          "\nE - $e" +
+          "\nF - Módulo de 0 a");
+    return calcularModulo();
+  }
+  print(informarValores());
+  
+  //*************************************
+  //Exercício 11
+    print("\n-----------------------" +
+   "\nExercício 11");
+
+  dynamic imprimirValores(){
+    
+  int num1 = 10;
+  int num2 = 10;
+    
+   if(num1 < num2) {
+     print("\nNúmero 1: $num1" + 
+          "\nNúmero 2: $num2" +
+          "\nNúmero $num1 é MENOR que $num2");
+     print("\nN°1 até N°2:");
+     for(int i = num1;i <= num2;i++){
+       print(i);
+     };
+     print("\nN°2 até N°1:");
+     for(int g = num2;g >= num1;g--){
+       print(g);
+     };  
+   } else if(num1 == num2) {
+     print("\nNúmero 1: $num1" + 
+          "\nNúmero 2: $num2" +
+          "\nNúmero $num1 é IGUAL à $num2");
+   } else {
+     return 0;
+   }
+    return 0;
+  }
+  print(imprimirValores());
+  
+  //*************************************
+  //Exercício 12
+  print("\n-----------------------" +
+   "\nExercício 12");
+  
+  int calcular() {
+    int x = Random().nextInt(70);
+    int y = Random().nextInt(40);
+    int a = x + y;
+    int b = x - y;
+    double c = x / y;
+    int d = x * y;
+    int e = x % y;
+    
+    print("\nN°1: $x" +
+          "\nN°2: $y" +
+          "\nSoma: $a" +
+          "\nSubtração: $b" +
+          "\nDivisão: $c" +
+          "\nMultiplicação: $d" +
+          "\nResto da Divisão: $e");
+    return 0;
+  }
+  calcular();
+}

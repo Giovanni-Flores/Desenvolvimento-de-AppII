@@ -1,0 +1,68 @@
+void main() {
+  
+  //Exrcício 1  - APP.2 2021
+  print("Exercício 1");
+  String nome = "Giovanni";
+  String nSobre = "Flores";
+  num idade = 18;
+  String endereco = "Rua da Felicidade";
+  
+  print("\nNome: " + nome +
+        "\nSobrenome: " + nSobre +
+        "\nIdade: $idade"
+        "\nEndereço: " + endereco);
+  
+  //-----------------------
+  //Exrcício 2  - APP.2 2021
+  print("\nExercício 2");
+  double valor = 10;
+  int quantPessoa = 4;
+  double resultado = valor * quantPessoa;
+  
+  print("\nValor da Entrada p/ pessoa: $valor" +
+        "\nTotal de pessoas: $quantPessoa" +
+        "\nValor Total: $resultado");  
+  
+  //-----------------------
+  //Exrcício 3  - APP.2 2021
+  print("\nExercício 3");
+  
+  double baseMa = 6;
+  double baseMe = 8.9;
+  double alturaTrapezio = 38;
+  double trapezio = ((baseMa + baseMe) * alturaTrapezio) / 2;
+  
+  
+  print("\nBase Maior: $baseMa" +
+       "\nBase Menor: $baseMe" +
+       "\nAltura: $alturaTrapezio" +
+       "\nÁrea do Trapézio = $trapezio");
+  
+  //-----------------------
+  //Exrcício 4  - APP.2 2021
+  print("\nExercício 4");
+  
+  double base = 10;
+  double alturaQuadrado = 25;
+  double quadrado = base * alturaQuadrado;
+  
+  
+  print("\nBase: $base" +
+       "\nAltura: $alturaQuadrado" +
+       "\nÁrea do Quadrado = $quadrado");
+  
+  //-----------------------
+  //Exrcício 5  - APP.2 2021
+  print("\nExercício 5");
+  
+  String nomeConf = "Estrogonofe";
+  
+  switch(nomeConf) {
+    case "Gelatina":
+      print("\nNome: $nomeConf - É a mesma pessoa!");
+    break;
+    default:
+      print("\nNome: $nomeConf - O nome não confere!");
+    break;  
+  }
+}
