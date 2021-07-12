@@ -1,0 +1,32 @@
+//Exercício 1
+  for (int i = 0; i < 101; i++) {
+    print(i);
+  }
+  int x = 100; 
+   do { 
+      print(x); 
+      x--; 
+   }
+   while(x>=0);
+   
+  //Exercício 2
+  const List numeros = [2,10,26,35,41,58,67,82,99,103];
+  int numMaior = 0;
+  for(int num in numeros){
+    print(num);
+    
+    numMaior = num;
+    
+    if(num >= numMaior) {
+      
+    }
+  }
+  print("O maior número é: $numMaior");
+  
+  //Exercício 3
+  int number1 = 2;
+  int number2 = 3;
+  for(number1;number1 < 1200;number1 *= number2) {
+    print(number1);
+    print(number2);
+  }
